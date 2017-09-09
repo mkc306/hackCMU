@@ -17,6 +17,8 @@ class WorkoutPreferencesViewController: UIViewController, UIPickerViewDelegate, 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        shortTimeView.countDownDuration = 1800
+        
         longTimeView.delegate = self
         longTimeView.dataSource = self
         longTimeView.isHidden = true

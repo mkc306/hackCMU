@@ -14,6 +14,7 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setBackgroundImage(image_name: "homepage", alpha: 1.0)
         INPreferences.requestSiriAuthorization { (status) in
             print("requested")
         INVocabulary.shared().setVocabularyStrings(["situp", "push up", "pull up"], of: .workoutActivityName)

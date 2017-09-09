@@ -34,6 +34,7 @@
 		45BFE3141F647131007D4106 /* Intents HandlerUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 45BFE3081F647131007D4106 /* Intents HandlerUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		45BFE3171F647131007D4106 /* Intents Handler.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 45BFE2FF1F647131007D4106 /* Intents Handler.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		74E8AB69F49D9911DA4E589E /* Pods_hackCMU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC11FB1DD1E4043AF0EA085B /* Pods_hackCMU.framework */; };
+		88AF30F81F6486A7008594AE /* UIViewController+SetBackgroundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AF30F71F6486A7008594AE /* UIViewController+SetBackgroundImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		45BFE30C1F647131007D4106 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
 		45BFE30F1F647131007D4106 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		45BFE3111F647131007D4106 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88AF30F71F6486A7008594AE /* UIViewController+SetBackgroundImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+SetBackgroundImage.swift"; sourceTree = "<group>"; };
 		E61948B78E37284EED537D8E /* Pods-hackCMU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hackCMU.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hackCMU/Pods-hackCMU.debug.xcconfig"; sourceTree = "<group>"; };
 		FC11FB1DD1E4043AF0EA085B /* Pods_hackCMU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hackCMU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -176,6 +178,7 @@
 				45BFE2F81F645406007D4106 /* ProfilePicView.swift */,
 				4560D5971F63CA8100CF4E91 /* situp.mp4 */,
 				4560D5721F6361CA00CF4E91 /* Assets.xcassets */,
+				88AF30F71F6486A7008594AE /* UIViewController+SetBackgroundImage.swift */,
 				4560D57D1F6369E400CF4E91 /* giphy.gif */,
 				4560D5741F6361CA00CF4E91 /* LaunchScreen.storyboard */,
 				4560D5771F6361CA00CF4E91 /* Info.plist */,
@@ -425,6 +428,7 @@
 				45BFE2F91F645406007D4106 /* ProfilePicView.swift in Sources */,
 				4560D5941F63743900CF4E91 /* ProfileViewController.swift in Sources */,
 				4560D5821F636EA900CF4E91 /* MakeWorkoutViewController.swift in Sources */,
+				88AF30F81F6486A7008594AE /* UIViewController+SetBackgroundImage.swift in Sources */,
 				4560D5801F636E5B00CF4E91 /* HomeViewController.swift in Sources */,
 				4560D58C1F63728F00CF4E91 /* ExerciseViewController.swift in Sources */,
 				4560D58E1F6373B000CF4E91 /* WorkoutInProgressViewController.swift in Sources */,
@@ -698,6 +702,7 @@
 				45BFE31A1F647131007D4106 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		45BFE31B1F647131007D4106 /* Build configuration list for PBXNativeTarget "Intents Handler" */ = {
 			isa = XCConfigurationList;
@@ -706,6 +711,7 @@
 				45BFE31D1F647131007D4106 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
