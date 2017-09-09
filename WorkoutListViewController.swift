@@ -10,22 +10,28 @@ import UIKit
 
 class WorkoutListViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
     @IBOutlet var tableView: UITableView!
+    let ALL_ARRAY = ["Barbell Bicep Curl","Pull Ups","Inclined Dumbell Press","Leg Raises", "Pec Dec Macuine"]
+    let ABS_ARRAY = ["Sit-ups","Crunches","Deadbug"]
+    let CHEST_ARRAY = ["Bench Press","Incline Flyes","Push Ups"]
+    let BICEPS_ARRAY = ["Bicep Curls","Hammer Curls","Barbell Curl"]
     var exerciseName = ""
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return 4
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
-            return 4
+            return 5
         } else if section == 1 {
-            return 7
+            return 3
         } else if section == 2 {
-            return 8
+            return 3
+        } else if section == 3 {
+            return 3
         } else {
             return 0
         }
@@ -33,7 +39,17 @@ class WorkoutListViewController: UIViewController,UITableViewDelegate, UITableVi
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = "placeholder \(indexPath.row)"
+        switch indexPath.section {
+        case 0:
+            cell.textLabel?.text = ALL_ARRAY[indexPath.row]
+        case 1:
+            cell.textLabel?.text = ABS_ARRAY[indexPath.row]
+        case 2:
+            cell.textLabel?.text = CHEST_ARRAY[indexPath.row]
+        case 3:
+            cell.textLabel?.text = BICEPS_ARRAY[indexPath.row]
+        default: return cell
+        }
         return cell
     }
     
@@ -47,32 +63,32 @@ class WorkoutListViewController: UIViewController,UITableViewDelegate, UITableVi
         case 0:
             return "All"
         case 1:
-            return "Chest"
-        case 2:
-            return "Biceps"
-        case 3:
             return "Abs"
+        case 2:
+            return "Chest"
+        case 3:
+            return "Biceps"
         default: return ""
         }
     }
     
-        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            let cell = tableView.cellForRow(at: indexPath)
-            if let text = cell?.textLabel?.text{
-                exerciseName = text
-                self.performSegue(withIdentifier: "ToExerciseSegue", sender: self)
-                
-            }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath)
+        if let text = cell?.textLabel?.text{
+            exerciseName = text
+            self.performSegue(withIdentifier: "ToExerciseSegue", sender: self)
+            
         }
-        
-        
-        
-        // MARK: - Navigation
-        
-        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            if let destination = segue.destination as? ExerciseViewController {
-                destination.title = self.exerciseName
-            }
-        }
-        
     }
+    
+    
+    
+    // MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? ExerciseViewController {
+            destination.title = self.exerciseName
+        }
+    }
+    
+}
