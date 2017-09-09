@@ -7,19 +7,21 @@
 //
 
 import UIKit
+import Intents
 
 class HomeViewController: UIViewController {
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        INPreferences.requestSiriAuthorization { (status) in
+            print("requested")
+        INVocabulary.shared().setVocabularyStrings(["situp", "push up", "pull up"], of: .workoutActivityName)
+        }
 
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
 
     /*

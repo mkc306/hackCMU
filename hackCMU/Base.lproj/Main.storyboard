@@ -668,7 +668,7 @@
         <!--Exercise View Controller-->
         <scene sceneID="MUQ-Tr-M3k">
             <objects>
-                <viewController id="sUp-hc-9k4" customClass="ExerciseViewController" customModule="hackCMU" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ExerciseViewController" id="sUp-hc-9k4" customClass="ExerciseViewController" customModule="hackCMU" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2AT-CK-Ajh"/>
                         <viewControllerLayoutGuide type="bottom" id="Uk6-2q-jxa"/>
