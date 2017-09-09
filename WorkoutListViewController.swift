@@ -10,10 +10,10 @@ import UIKit
 
 class WorkoutListViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
     @IBOutlet var tableView: UITableView!
-    
+    var exerciseName = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-       // self.tableView.contentInset = UIEdgeInsetsMake(20, 0, -80, 0);
+        // self.tableView.contentInset = UIEdgeInsetsMake(20, 0, -80, 0);
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -53,17 +53,26 @@ class WorkoutListViewController: UIViewController,UITableViewDelegate, UITableVi
             return "Abs"
         default: return ""
         }
-        
     }
     
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
-}
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            let cell = tableView.cellForRow(at: indexPath)
+            // Get range based on the string index.
+            if let text = cell?.textLabel?.text{
+                exerciseName = text
+                self.performSegue(withIdentifier: "ToProgramSegue", sender: self)
+                
+            }
+        }
+        
+        
+        
+        // MARK: - Navigation
+        
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if let destination = segue.destination as? ExerciseViewController {
+                destination.title = self.exerciseName
+            }
+        }
+        
+    }

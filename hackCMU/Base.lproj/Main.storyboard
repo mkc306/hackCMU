@@ -535,6 +535,7 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="18j-fn-eBs" id="12c-l8-Vuf"/>
+                        <segue destination="sUp-hc-9k4" kind="show" identifier="ToExerciseSegue" id="lpP-ga-hXe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m8Y-Ck-JOf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -574,7 +575,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gl4-Uk-Jrb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="11250" y="98"/>
+            <point key="canvasLocation" x="11396" y="98"/>
         </scene>
         <!--Workout In Progress View Controller-->
         <scene sceneID="8yI-Dw-H5F">
