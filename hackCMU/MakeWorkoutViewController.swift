@@ -9,18 +9,46 @@
 import UIKit
 
 class MakeWorkoutViewController: UIViewController {
+    @IBOutlet var bodyPartsLabel: UILabel!
+    @IBOutlet var chestButton: UIButton!
+    @IBOutlet var rBicepButton: UIButton!
+    var isChestSelected = false
+    var isRBicepSelected  = false
+    var isLBicepSelected  = false
+    var isAbsSelected  = false
+    
+    
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        if bodyPartsLabel.text == "No Muscles Selected" {
+            bodyPartsLabel.textColor = UIColor.lightGray
+        } 
+        
     }
     
+    @IBAction func onChestButtonPress(_ sender: Any) {
+        if isChestSelected {
+             chestButton.setImage(#imageLiteral(resourceName: "Chest"), for: .normal)
+            if bodyPartsLabel.text == "No Muscles Selected" {
+                bodyPartsLabel.textColor = UIColor.lightGray
+            } else {
+                chestButton.setImage(#imageLiteral(resourceName: "ChestHighlighted"), for: .normal)
+                bodyPartsLabel.text = "Chest"
+                bodyPartsLabel.textColor = UIColor.black
+                isChestSelected = true
+
+            }
+        }
+    }
+    @IBAction func onRBicepButtonPress(_ sender: UIButton) {
+        
+        
+    }
+    
+
 
     /*
     // MARK: - Navigation
@@ -31,5 +59,6 @@ class MakeWorkoutViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
 
 }

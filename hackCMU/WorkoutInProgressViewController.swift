@@ -12,15 +12,10 @@ class WorkoutInProgressViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //split into several images, based on clicking which image then change to the colored version of the image, display selected body parts 
 
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
 
     /*
     // MARK: - Navigation
