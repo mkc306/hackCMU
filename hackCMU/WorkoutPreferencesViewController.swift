@@ -8,17 +8,44 @@
 
 import UIKit
 
-class WorkoutPreferencesViewController: UIViewController {
+class WorkoutPreferencesViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+    @IBOutlet var segmentedControl: UISegmentedControl!
+    @IBOutlet var longTimeView: UIPickerView!
+    @IBOutlet var shortTimeView: UIDatePicker!
+    let longTimeViewData = ["2 weeks","1 month","3 months","6 months","1 year"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        longTimeView.delegate = self
+        longTimeView.dataSource = self
+        longTimeView.isHidden = true
 
         // Do any additional setup after loading the view.
     }
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return longTimeViewData.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return longTimeViewData[row]
+    }
+    
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func onSegmentControlPress(_ sender: Any) {
+        if segmentedControl.selectedSegmentIndex == 0 {
+            longTimeView.isHidden = true
+            shortTimeView.isHidden = false
+        } else if segmentedControl.selectedSegmentIndex == 1 {
+            longTimeView.isHidden = false
+            shortTimeView.isHidden = true
+        } else {
+            
+        }
     }
     
 
