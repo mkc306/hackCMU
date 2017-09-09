@@ -12,9 +12,10 @@ class WorkoutInProgressViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //split into several images, based on clicking which image then change to the colored version of the image, display selected body parts 
-
-        // Do any additional setup after loading the view.
+        let jeremyGif = UIImage.gifImageWithName(name: "giphy")
+        let imageView = UIImageView(image: jeremyGif)
+        imageView.frame = CGRect(x: 30.0, y: 300.0, width: 300, height: 300.0)
+        view.addSubview(imageView)
     }
 
     /*

@@ -23,6 +23,8 @@
 		4560D5901F6373C400CF4E91 /* PostWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4560D58F1F6373C400CF4E91 /* PostWorkoutViewController.swift */; };
 		4560D5921F63742200CF4E91 /* MyWorkoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4560D5911F63742200CF4E91 /* MyWorkoutsViewController.swift */; };
 		4560D5941F63743900CF4E91 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4560D5931F63743900CF4E91 /* ProfileViewController.swift */; };
+		4560D5961F63C23700CF4E91 /* iOSDevCenters+GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4560D5951F63C23700CF4E91 /* iOSDevCenters+GIF.swift */; };
+		4560D5981F63CB7000CF4E91 /* situp.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4560D5971F63CA8100CF4E91 /* situp.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		4560D58F1F6373C400CF4E91 /* PostWorkoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostWorkoutViewController.swift; sourceTree = "<group>"; };
 		4560D5911F63742200CF4E91 /* MyWorkoutsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyWorkoutsViewController.swift; sourceTree = "<group>"; };
 		4560D5931F63743900CF4E91 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		4560D5951F63C23700CF4E91 /* iOSDevCenters+GIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "iOSDevCenters+GIF.swift"; sourceTree = "<group>"; };
+		4560D5971F63CA8100CF4E91 /* situp.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = situp.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,18 +81,20 @@
 			isa = PBXGroup;
 			children = (
 				4560D56B1F6361C900CF4E91 /* AppDelegate.swift */,
+				4560D5951F63C23700CF4E91 /* iOSDevCenters+GIF.swift */,
 				4560D56D1F6361C900CF4E91 /* LoadingViewController.swift */,
 				4560D57F1F636E5B00CF4E91 /* HomeViewController.swift */,
 				4560D5811F636EA900CF4E91 /* MakeWorkoutViewController.swift */,
 				4560D5831F6371D700CF4E91 /* WorkoutPreferencesViewController.swift */,
 				4560D5851F6371F900CF4E91 /* WorkoutPreferences2ViewController.swift */,
 				4560D5891F63726800CF4E91 /* WorkoutListViewController.swift */,
+				4560D58B1F63728F00CF4E91 /* ExerciseViewController.swift */,
 				4560D56F1F6361CA00CF4E91 /* Main.storyboard */,
 				4560D5931F63743900CF4E91 /* ProfileViewController.swift */,
 				4560D5911F63742200CF4E91 /* MyWorkoutsViewController.swift */,
 				4560D58F1F6373C400CF4E91 /* PostWorkoutViewController.swift */,
 				4560D58D1F6373B000CF4E91 /* WorkoutInProgressViewController.swift */,
-				4560D58B1F63728F00CF4E91 /* ExerciseViewController.swift */,
+				4560D5971F63CA8100CF4E91 /* situp.mp4 */,
 				4560D5721F6361CA00CF4E91 /* Assets.xcassets */,
 				4560D57D1F6369E400CF4E91 /* giphy.gif */,
 				4560D5741F6361CA00CF4E91 /* LaunchScreen.storyboard */,
@@ -159,6 +165,7 @@
 				4560D5761F6361CA00CF4E91 /* LaunchScreen.storyboard in Resources */,
 				4560D5731F6361CA00CF4E91 /* Assets.xcassets in Resources */,
 				4560D57E1F6369E400CF4E91 /* giphy.gif in Resources */,
+				4560D5981F63CB7000CF4E91 /* situp.mp4 in Resources */,
 				4560D5711F6361CA00CF4E91 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,6 +182,7 @@
 				4560D58A1F63726800CF4E91 /* WorkoutListViewController.swift in Sources */,
 				4560D56C1F6361C900CF4E91 /* AppDelegate.swift in Sources */,
 				4560D5861F6371F900CF4E91 /* WorkoutPreferences2ViewController.swift in Sources */,
+				4560D5961F63C23700CF4E91 /* iOSDevCenters+GIF.swift in Sources */,
 				4560D5921F63742200CF4E91 /* MyWorkoutsViewController.swift in Sources */,
 				4560D5941F63743900CF4E91 /* ProfileViewController.swift in Sources */,
 				4560D5821F636EA900CF4E91 /* MakeWorkoutViewController.swift in Sources */,

@@ -57,10 +57,9 @@ class WorkoutListViewController: UIViewController,UITableViewDelegate, UITableVi
     
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
             let cell = tableView.cellForRow(at: indexPath)
-            // Get range based on the string index.
             if let text = cell?.textLabel?.text{
                 exerciseName = text
-                self.performSegue(withIdentifier: "ToProgramSegue", sender: self)
+                self.performSegue(withIdentifier: "ToExerciseSegue", sender: self)
                 
             }
         }
