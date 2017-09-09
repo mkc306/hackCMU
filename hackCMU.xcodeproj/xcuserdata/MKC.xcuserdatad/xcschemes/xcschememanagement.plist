@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Intents Handler.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Intents HandlerUI.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>hackCMU.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +23,16 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>4560D5671F6361C900CF4E91</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>45BFE2FE1F647131007D4106</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>45BFE3071F647131007D4106</key>
 		<dict>
 			<key>primary</key>
 			<true/>

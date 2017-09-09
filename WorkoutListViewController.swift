@@ -45,10 +45,12 @@ class WorkoutListViewController: UIViewController,UITableViewDelegate, UITableVi
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
         case 0:
-            return "Chest"
+            return "All"
         case 1:
-            return "Biceps"
+            return "Chest"
         case 2:
+            return "Biceps"
+        case 3:
             return "Abs"
         default: return ""
         }
