@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		31B491A7CD09AF77C45C0680956A43FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		605F4E88F4485F4E65BF235E0EF852F0 /* Pods-hackCMU-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D67233BBE4818660040AA5EA952F578 /* Pods-hackCMU-dummy.m */; };
+		8CA2F1E234E78102EEDC05F6C69C4A68 /* SRCountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA75550AA1EB8B33E941E9E6409F145 /* SRCountdownTimer.swift */; };
+		A58977FB2BF7D29728F03EB7D7F8C867 /* SRCountdownTimer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 18E64E9FE771E1E9A9826A02830CC142 /* SRCountdownTimer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B360D0A65F8EA438C7CC0D33B670709B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		BF1CC5C81F7F14A838405462ECCF5EA4 /* Pods-hackCMU-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E627B5C87016CFF3293AC9A507404E2D /* Pods-hackCMU-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E78CCD05C3DE56766BA006548666C9F1 /* SRCountdownTimer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F593674C0C1F368023F9615AF588F7 /* SRCountdownTimer-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8AFFEAEE176C71D88F539A6D5720DD19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40F25972F247263EAD523DAC03CF434A;
+			remoteInfo = SRCountdownTimer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14F593674C0C1F368023F9615AF588F7 /* SRCountdownTimer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SRCountdownTimer-dummy.m"; sourceTree = "<group>"; };
+		18E64E9FE771E1E9A9826A02830CC142 /* SRCountdownTimer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SRCountdownTimer-umbrella.h"; sourceTree = "<group>"; };
+		34D5FD90D2C7D9B8552BA6139C1C106D /* Pods-hackCMU-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-hackCMU-acknowledgements.plist"; sourceTree = "<group>"; };
+		53C17E390C20CE46F1987319E5AA3553 /* Pods-hackCMU-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-hackCMU-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5D67233BBE4818660040AA5EA952F578 /* Pods-hackCMU-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-hackCMU-dummy.m"; sourceTree = "<group>"; };
+		60C074E6D33290AA1B12A99A428ED13B /* Pods-hackCMU-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-hackCMU-resources.sh"; sourceTree = "<group>"; };
+		6C7CC0B65544BCF46CDBCDF1DBF79BCB /* SRCountdownTimer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SRCountdownTimer.modulemap; sourceTree = "<group>"; };
+		896858387A226A5E9BB559CD3AF6F254 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D820BA347B9DE822296C795DCFDAC7D /* Pods-hackCMU-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-hackCMU-frameworks.sh"; sourceTree = "<group>"; };
+		8DA75550AA1EB8B33E941E9E6409F145 /* SRCountdownTimer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SRCountdownTimer.swift; path = SRCountdownTimer/SRCountdownTimer.swift; sourceTree = "<group>"; };
+		9117423678A863085BE1F77AB71AA40F /* SRCountdownTimer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SRCountdownTimer.xcconfig; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96F9018163C6E3322C125A6B78D78CCE /* Pods-hackCMU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-hackCMU.debug.xcconfig"; sourceTree = "<group>"; };
+		B49062A251F17A540912868008F88055 /* SRCountdownTimer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SRCountdownTimer-prefix.pch"; sourceTree = "<group>"; };
+		B6A94C31F1DF5CFE76F3D378518FE8C1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2F7FBBE26908ED38D13A05BC64D6B4E /* SRCountdownTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SRCountdownTimer.framework; path = SRCountdownTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E5AF9406C728EFFB999016B1DEB73437 /* Pods-hackCMU.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-hackCMU.modulemap"; sourceTree = "<group>"; };
+		E627B5C87016CFF3293AC9A507404E2D /* Pods-hackCMU-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-hackCMU-umbrella.h"; sourceTree = "<group>"; };
+		E6352E3BA70A9A6E381D1C2CEB043A62 /* Pods_hackCMU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_hackCMU.framework; path = "Pods-hackCMU.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F96C84BC09A7C6708C4A072BE5F89FC1 /* Pods-hackCMU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-hackCMU.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E2723A73E6B1A64FE683A79C757EFEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B360D0A65F8EA438C7CC0D33B670709B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6310C11749CF90E44B1B8C373DEEBD38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31B491A7CD09AF77C45C0680956A43FA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		163C5144F57D259C3C8A5DF45A1CAC55 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B9363A9B2C0A5D74605691C0DBE9DA6C /* Pods-hackCMU */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				B78B6D7DD69F2BD34DAA5730930A0B2F /* Pods */,
+				8314224967D3216AAF01DFC1C9C7BA36 /* Products */,
+				163C5144F57D259C3C8A5DF45A1CAC55 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8314224967D3216AAF01DFC1C9C7BA36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E6352E3BA70A9A6E381D1C2CEB043A62 /* Pods_hackCMU.framework */,
+				C2F7FBBE26908ED38D13A05BC64D6B4E /* SRCountdownTimer.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83787CBB653DED071B220B2E4D9E5854 /* SRCountdownTimer */ = {
+			isa = PBXGroup;
+			children = (
+				8DA75550AA1EB8B33E941E9E6409F145 /* SRCountdownTimer.swift */,
+				B114BA1E4268C9A99F143504AE87E28F /* Support Files */,
+			);
+			name = SRCountdownTimer;
+			path = SRCountdownTimer;
+			sourceTree = "<group>";
+		};
+		B114BA1E4268C9A99F143504AE87E28F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6A94C31F1DF5CFE76F3D378518FE8C1 /* Info.plist */,
+				6C7CC0B65544BCF46CDBCDF1DBF79BCB /* SRCountdownTimer.modulemap */,
+				9117423678A863085BE1F77AB71AA40F /* SRCountdownTimer.xcconfig */,
+				14F593674C0C1F368023F9615AF588F7 /* SRCountdownTimer-dummy.m */,
+				B49062A251F17A540912868008F88055 /* SRCountdownTimer-prefix.pch */,
+				18E64E9FE771E1E9A9826A02830CC142 /* SRCountdownTimer-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SRCountdownTimer";
+			sourceTree = "<group>";
+		};
+		B78B6D7DD69F2BD34DAA5730930A0B2F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83787CBB653DED071B220B2E4D9E5854 /* SRCountdownTimer */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B9363A9B2C0A5D74605691C0DBE9DA6C /* Pods-hackCMU */ = {
+			isa = PBXGroup;
+			children = (
+				896858387A226A5E9BB559CD3AF6F254 /* Info.plist */,
+				E5AF9406C728EFFB999016B1DEB73437 /* Pods-hackCMU.modulemap */,
+				53C17E390C20CE46F1987319E5AA3553 /* Pods-hackCMU-acknowledgements.markdown */,
+				34D5FD90D2C7D9B8552BA6139C1C106D /* Pods-hackCMU-acknowledgements.plist */,
+				5D67233BBE4818660040AA5EA952F578 /* Pods-hackCMU-dummy.m */,
+				8D820BA347B9DE822296C795DCFDAC7D /* Pods-hackCMU-frameworks.sh */,
+				60C074E6D33290AA1B12A99A428ED13B /* Pods-hackCMU-resources.sh */,
+				E627B5C87016CFF3293AC9A507404E2D /* Pods-hackCMU-umbrella.h */,
+				96F9018163C6E3322C125A6B78D78CCE /* Pods-hackCMU.debug.xcconfig */,
+				F96C84BC09A7C6708C4A072BE5F89FC1 /* Pods-hackCMU.release.xcconfig */,
+			);
+			name = "Pods-hackCMU";
+			path = "Target Support Files/Pods-hackCMU";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6F8B756C89E8037CDBE83AA215A594C6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF1CC5C81F7F14A838405462ECCF5EA4 /* Pods-hackCMU-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3E49A9EE0F5D2E89DF1CDC047F4F965 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A58977FB2BF7D29728F03EB7D7F8C867 /* SRCountdownTimer-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		40F25972F247263EAD523DAC03CF434A /* SRCountdownTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0B720BEBFACE6470B51C506E2F0F07B /* Build configuration list for PBXNativeTarget "SRCountdownTimer" */;
+			buildPhases = (
+				9609EA290E40FD910B72E539A7B72F5E /* Sources */,
+				6310C11749CF90E44B1B8C373DEEBD38 /* Frameworks */,
+				D3E49A9EE0F5D2E89DF1CDC047F4F965 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SRCountdownTimer;
+			productName = SRCountdownTimer;
+			productReference = C2F7FBBE26908ED38D13A05BC64D6B4E /* SRCountdownTimer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6AD5EB7198EB9F0FC90B41237C41071A /* Pods-hackCMU */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6617C106E990908F656AF0126D20877D /* Build configuration list for PBXNativeTarget "Pods-hackCMU" */;
+			buildPhases = (
+				55FD46E865CA11601454DCCD5069D67E /* Sources */,
+				3E2723A73E6B1A64FE683A79C757EFEB /* Frameworks */,
+				6F8B756C89E8037CDBE83AA215A594C6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A43D277430A5B640ECCD7C9C23F0720 /* PBXTargetDependency */,
+			);
+			name = "Pods-hackCMU";
+			productName = "Pods-hackCMU";
+			productReference = E6352E3BA70A9A6E381D1C2CEB043A62 /* Pods_hackCMU.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 8314224967D3216AAF01DFC1C9C7BA36 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6AD5EB7198EB9F0FC90B41237C41071A /* Pods-hackCMU */,
+				40F25972F247263EAD523DAC03CF434A /* SRCountdownTimer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55FD46E865CA11601454DCCD5069D67E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				605F4E88F4485F4E65BF235E0EF852F0 /* Pods-hackCMU-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9609EA290E40FD910B72E539A7B72F5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E78CCD05C3DE56766BA006548666C9F1 /* SRCountdownTimer-dummy.m in Sources */,
+				8CA2F1E234E78102EEDC05F6C69C4A68 /* SRCountdownTimer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A43D277430A5B640ECCD7C9C23F0720 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SRCountdownTimer;
+			target = 40F25972F247263EAD523DAC03CF434A /* SRCountdownTimer */;
+			targetProxy = 8AFFEAEE176C71D88F539A6D5720DD19 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		156284431C64CB05C59BDA0595A1E95A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2AB04061BF063F8200371EF4F28F66DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9117423678A863085BE1F77AB71AA40F /* SRCountdownTimer.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SRCountdownTimer/SRCountdownTimer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SRCountdownTimer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SRCountdownTimer/SRCountdownTimer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SRCountdownTimer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		69F0C69D7DD902D295DC18879A1E30F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F96C84BC09A7C6708C4A072BE5F89FC1 /* Pods-hackCMU.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-hackCMU/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-hackCMU/Pods-hackCMU.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_hackCMU;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A6B04DB0187A12566CB8845FA7E43D1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96F9018163C6E3322C125A6B78D78CCE /* Pods-hackCMU.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-hackCMU/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-hackCMU/Pods-hackCMU.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_hackCMU;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C382132BB6BF8CA1A911872A2062FD0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		DB6CFA24B8A3F7952194A65539BBCD89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9117423678A863085BE1F77AB71AA40F /* SRCountdownTimer.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SRCountdownTimer/SRCountdownTimer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SRCountdownTimer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SRCountdownTimer/SRCountdownTimer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SRCountdownTimer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C382132BB6BF8CA1A911872A2062FD0D /* Debug */,
+				156284431C64CB05C59BDA0595A1E95A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6617C106E990908F656AF0126D20877D /* Build configuration list for PBXNativeTarget "Pods-hackCMU" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6B04DB0187A12566CB8845FA7E43D1C /* Debug */,
+				69F0C69D7DD902D295DC18879A1E30F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0B720BEBFACE6470B51C506E2F0F07B /* Build configuration list for PBXNativeTarget "SRCountdownTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6CFA24B8A3F7952194A65539BBCD89 /* Debug */,
+				2AB04061BF063F8200371EF4F28F66DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
