@@ -7,20 +7,25 @@
 //
 
 import UIKit
+import AVKit
+import AVFoundation
+
 
 class ExerciseViewController: UIViewController {
+    @IBOutlet var videoButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
+    func playVideo() {
+        
+    }
+    @IBAction func onVideoButtonPress(_ sender: UIButton) {
+        playVideo()
+    }
 
     /*
     // MARK: - Navigation
