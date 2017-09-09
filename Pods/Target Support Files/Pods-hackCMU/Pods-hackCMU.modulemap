@@ -1,0 +1,6 @@
+framework module Pods_hackCMU {
+  umbrella header "Pods-hackCMU-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -25,9 +25,11 @@
 		4560D5941F63743900CF4E91 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4560D5931F63743900CF4E91 /* ProfileViewController.swift */; };
 		4560D5961F63C23700CF4E91 /* iOSDevCenters+GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4560D5951F63C23700CF4E91 /* iOSDevCenters+GIF.swift */; };
 		4560D5981F63CB7000CF4E91 /* situp.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4560D5971F63CA8100CF4E91 /* situp.mp4 */; };
+		74E8AB69F49D9911DA4E589E /* Pods_hackCMU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC11FB1DD1E4043AF0EA085B /* Pods_hackCMU.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		187CAA7FAFE642D27AD058E1 /* Pods-hackCMU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hackCMU.release.xcconfig"; path = "Pods/Target Support Files/Pods-hackCMU/Pods-hackCMU.release.xcconfig"; sourceTree = "<group>"; };
 		4560D5681F6361C900CF4E91 /* hackCMU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hackCMU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4560D56B1F6361C900CF4E91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4560D56D1F6361C900CF4E91 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +50,8 @@
 		4560D5931F63743900CF4E91 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		4560D5951F63C23700CF4E91 /* iOSDevCenters+GIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "iOSDevCenters+GIF.swift"; sourceTree = "<group>"; };
 		4560D5971F63CA8100CF4E91 /* situp.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = situp.mp4; sourceTree = "<group>"; };
+		E61948B78E37284EED537D8E /* Pods-hackCMU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hackCMU.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hackCMU/Pods-hackCMU.debug.xcconfig"; sourceTree = "<group>"; };
+		FC11FB1DD1E4043AF0EA085B /* Pods_hackCMU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hackCMU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74E8AB69F49D9911DA4E589E /* Pods_hackCMU.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +71,8 @@
 			children = (
 				4560D56A1F6361C900CF4E91 /* hackCMU */,
 				4560D5691F6361C900CF4E91 /* Products */,
+				DB5A9B4F8DC6B86029CA5CF2 /* Pods */,
+				FC5ACCD5E3D363DA1A8EB35E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +110,23 @@
 			path = hackCMU;
 			sourceTree = "<group>";
 		};
+		DB5A9B4F8DC6B86029CA5CF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E61948B78E37284EED537D8E /* Pods-hackCMU.debug.xcconfig */,
+				187CAA7FAFE642D27AD058E1 /* Pods-hackCMU.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FC5ACCD5E3D363DA1A8EB35E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC11FB1DD1E4043AF0EA085B /* Pods_hackCMU.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -110,9 +134,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4560D57A1F6361CA00CF4E91 /* Build configuration list for PBXNativeTarget "hackCMU" */;
 			buildPhases = (
+				0166F18C331D62A425CE9A70 /* [CP] Check Pods Manifest.lock */,
 				4560D5641F6361C900CF4E91 /* Sources */,
 				4560D5651F6361C900CF4E91 /* Frameworks */,
 				4560D5661F6361C900CF4E91 /* Resources */,
+				4F8001BCC13F1C1BC4B9A93C /* [CP] Embed Pods Frameworks */,
+				7D7E6DED2D0363B490B5CA27 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -171,6 +198,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0166F18C331D62A425CE9A70 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4F8001BCC13F1C1BC4B9A93C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hackCMU/Pods-hackCMU-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D7E6DED2D0363B490B5CA27 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hackCMU/Pods-hackCMU-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4560D5641F6361C900CF4E91 /* Sources */ = {
@@ -312,6 +387,7 @@
 		};
 		4560D57B1F6361CA00CF4E91 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E61948B78E37284EED537D8E /* Pods-hackCMU.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SAR5GQ633N;
@@ -325,6 +401,7 @@
 		};
 		4560D57C1F6361CA00CF4E91 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 187CAA7FAFE642D27AD058E1 /* Pods-hackCMU.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SAR5GQ633N;
