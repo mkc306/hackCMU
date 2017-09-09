@@ -4,35 +4,25 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Intents Handler.xcscheme</key>
+		<key>Pods-hackCMU.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
-		<key>Intents HandlerUI.xcscheme</key>
+		<key>SRCountdownTimer.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
-		</dict>
-		<key>hackCMU.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>4</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4560D5671F6361C900CF4E91</key>
+		<key>40F25972F247263EAD523DAC03CF434A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>45BFE2FE1F647131007D4106</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>45BFE3071F647131007D4106</key>
+		<key>6AD5EB7198EB9F0FC90B41237C41071A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
