@@ -13,7 +13,6 @@ class WorkoutListViewController: UIViewController,UITableViewDelegate, UITableVi
     var exerciseName = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-        // self.tableView.contentInset = UIEdgeInsetsMake(20, 0, -80, 0);
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

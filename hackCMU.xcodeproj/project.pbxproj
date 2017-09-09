@@ -25,6 +25,8 @@
 		4560D5941F63743900CF4E91 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4560D5931F63743900CF4E91 /* ProfileViewController.swift */; };
 		4560D5961F63C23700CF4E91 /* iOSDevCenters+GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4560D5951F63C23700CF4E91 /* iOSDevCenters+GIF.swift */; };
 		4560D5981F63CB7000CF4E91 /* situp.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4560D5971F63CA8100CF4E91 /* situp.mp4 */; };
+		45BFE2F71F644DDB007D4106 /* MarathonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFE2F61F644DDB007D4106 /* MarathonViewController.swift */; };
+		45BFE2F91F645406007D4106 /* ProfilePicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFE2F81F645406007D4106 /* ProfilePicView.swift */; };
 		74E8AB69F49D9911DA4E589E /* Pods_hackCMU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC11FB1DD1E4043AF0EA085B /* Pods_hackCMU.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +52,8 @@
 		4560D5931F63743900CF4E91 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		4560D5951F63C23700CF4E91 /* iOSDevCenters+GIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "iOSDevCenters+GIF.swift"; sourceTree = "<group>"; };
 		4560D5971F63CA8100CF4E91 /* situp.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = situp.mp4; sourceTree = "<group>"; };
+		45BFE2F61F644DDB007D4106 /* MarathonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MarathonViewController.swift; path = ../MarathonViewController.swift; sourceTree = "<group>"; };
+		45BFE2F81F645406007D4106 /* ProfilePicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePicView.swift; sourceTree = "<group>"; };
 		E61948B78E37284EED537D8E /* Pods-hackCMU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hackCMU.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hackCMU/Pods-hackCMU.debug.xcconfig"; sourceTree = "<group>"; };
 		FC11FB1DD1E4043AF0EA085B /* Pods_hackCMU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hackCMU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -98,9 +102,11 @@
 				4560D58B1F63728F00CF4E91 /* ExerciseViewController.swift */,
 				4560D58D1F6373B000CF4E91 /* WorkoutInProgressViewController.swift */,
 				4560D58F1F6373C400CF4E91 /* PostWorkoutViewController.swift */,
+				4560D5911F63742200CF4E91 /* MyWorkoutsViewController.swift */,
+				45BFE2F61F644DDB007D4106 /* MarathonViewController.swift */,
 				4560D56F1F6361CA00CF4E91 /* Main.storyboard */,
 				4560D5931F63743900CF4E91 /* ProfileViewController.swift */,
-				4560D5911F63742200CF4E91 /* MyWorkoutsViewController.swift */,
+				45BFE2F81F645406007D4106 /* ProfilePicView.swift */,
 				4560D5971F63CA8100CF4E91 /* situp.mp4 */,
 				4560D5721F6361CA00CF4E91 /* Assets.xcassets */,
 				4560D57D1F6369E400CF4E91 /* giphy.gif */,
@@ -256,9 +262,11 @@
 				4560D56E1F6361C900CF4E91 /* LoadingViewController.swift in Sources */,
 				4560D58A1F63726800CF4E91 /* WorkoutListViewController.swift in Sources */,
 				4560D56C1F6361C900CF4E91 /* AppDelegate.swift in Sources */,
+				45BFE2F71F644DDB007D4106 /* MarathonViewController.swift in Sources */,
 				4560D5861F6371F900CF4E91 /* WorkoutPreferences2ViewController.swift in Sources */,
 				4560D5961F63C23700CF4E91 /* iOSDevCenters+GIF.swift in Sources */,
 				4560D5921F63742200CF4E91 /* MyWorkoutsViewController.swift in Sources */,
+				45BFE2F91F645406007D4106 /* ProfilePicView.swift in Sources */,
 				4560D5941F63743900CF4E91 /* ProfileViewController.swift in Sources */,
 				4560D5821F636EA900CF4E91 /* MakeWorkoutViewController.swift in Sources */,
 				4560D5801F636E5B00CF4E91 /* HomeViewController.swift in Sources */,
@@ -432,6 +440,7 @@
 				4560D57C1F6361CA00CF4E91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
