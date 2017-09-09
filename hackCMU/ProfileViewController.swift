@@ -10,7 +10,7 @@ import UIKit
 
 
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet var profilePic: UIImageView!
 
     @IBOutlet var bmiLabel: UILabel!
