@@ -14,7 +14,7 @@ class WorkoutInProgressViewController: UIViewController {
         super.viewDidLoad()
         let jeremyGif = UIImage.gifImageWithName(name: "giphy")
         let imageView = UIImageView(image: jeremyGif)
-        imageView.frame = CGRect(x: 20.0, y: 50.0, width: self.view.frame.size.width - 40, height: 150.0)
+        imageView.frame = CGRect(x: 30.0, y: 300.0, width: 300, height: 300.0)
         view.addSubview(imageView)
     }
 
