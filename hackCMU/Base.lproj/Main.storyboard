@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="IfC-c9-F6Z">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="IfC-c9-F6Z">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -259,6 +259,9 @@
                                     <constraint firstAttribute="height" constant="56" id="kyQ-rk-jhk"/>
                                 </constraints>
                                 <state key="normal" image="BicepL"/>
+                                <connections>
+                                    <action selector="onLBicepButtonPress:" destination="xCh-iv-A5N" eventType="touchUpInside" id="K74-lY-Nb3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3TX-bu-jDn">
                                 <rect key="frame" x="153" y="144" width="77" height="84"/>
@@ -267,6 +270,9 @@
                                     <constraint firstAttribute="width" constant="77" id="V8d-Ek-fuA"/>
                                 </constraints>
                                 <state key="normal" image="Abs"/>
+                                <connections>
+                                    <action selector="onAbsButtonPress:" destination="xCh-iv-A5N" eventType="touchUpInside" id="1RL-Ig-fYH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -291,8 +297,10 @@
                     <tabBarItem key="tabBarItem" title="New Workout" id="x8a-PG-gxO"/>
                     <navigationItem key="navigationItem" id="by0-4Y-IuS"/>
                     <connections>
+                        <outlet property="absButton" destination="3TX-bu-jDn" id="Swz-jI-RZs"/>
                         <outlet property="bodyPartsLabel" destination="bU5-Ng-PvG" id="XRu-C6-kpE"/>
                         <outlet property="chestButton" destination="Djm-S5-OMG" id="4ja-Mn-1Gz"/>
+                        <outlet property="lBicepButton" destination="Izn-iU-fyw" id="2Le-ww-tLW"/>
                         <outlet property="rBicepButton" destination="wCB-gK-EnK" id="KZz-s6-MZ5"/>
                     </connections>
                 </viewController>
@@ -331,7 +339,7 @@
                                 <rect key="frame" x="54" y="202" width="267" height="131"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <date key="date" timeIntervalSinceReferenceDate="526607999.923163">
-                                    <!--2017-09-08 11:59:59 pm +0000-->
+                                    <!--2017-09-08 23:59:59 +0000-->
                                 </date>
                             </datePicker>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jdO-Ic-Hce">
@@ -559,6 +567,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="IfC-c9-F6Z" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Vd5-iL-L48">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
@@ -594,7 +603,6 @@
         <!--Home-->
         <scene sceneID="2XT-Cl-jG2">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="K45-I9-VUn" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Rgd-5L-P6k" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" id="DyA-Xs-dAV"/>
                     <toolbarItems/>
@@ -607,6 +615,7 @@
                         <segue destination="Pc3-sw-Qjp" kind="relationship" relationship="rootViewController" id="B6W-o6-3xA"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K45-I9-VUn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5439" y="40"/>
         </scene>

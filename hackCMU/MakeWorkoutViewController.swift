@@ -12,6 +12,9 @@ class MakeWorkoutViewController: UIViewController {
     @IBOutlet var bodyPartsLabel: UILabel!
     @IBOutlet var chestButton: UIButton!
     @IBOutlet var rBicepButton: UIButton!
+    @IBOutlet weak var absButton: UIButton!
+    @IBOutlet weak var lBicepButton: UIButton!
+    
     var isChestSelected = false
     var isRBicepSelected  = false
     var isLBicepSelected  = false
@@ -45,7 +48,12 @@ class MakeWorkoutViewController: UIViewController {
     }
     @IBAction func onRBicepButtonPress(_ sender: UIButton) {
         
-        
+    }
+    
+    @IBAction func onLBicepButtonPress(_ sender: UIButton) {
+    }
+    
+    @IBAction func onAbsButtonPress(_ sender: UIButton) {
     }
     
 
