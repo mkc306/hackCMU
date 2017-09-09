@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import WebKit
+
 
 class PostWorkoutViewController: UIViewController {
+    @IBOutlet var foodButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
