@@ -34,15 +34,18 @@ class WorkoutInProgressViewController: UIViewController, SRCountdownTimerDelegat
         super.viewDidLoad()
         hoursView.delegate = self
         secondsView.delegate = self
-        timerView.delegate = self 
+        timerView.delegate = self
+        timerView.lineColor = UIColor.orange
+        hoursView.lineColor = UIColor.orange
+        secondsView.lineColor = UIColor.orange
         endWorkoutButton.isEnabled = false
         let jeremyGif = UIImage.gifImageWithName(name: "giphy")
         let imageView = UIImageView(image: jeremyGif)
         imageView.frame = CGRect(x: 30.0, y: 300.0, width: 300, height: 300.0)
         view.addSubview(imageView)
-//        timerView.start(beginingValue: 29, interval: 60)
-//        hoursView.start(beginingValue: 1, interval: 3600)
-//         secondsView.start(beginingValue: 60, interval: 1)
+       // timerView.start(beginingValue: 29, interval: 60)
+//       hoursView.start(beginingValue: 1, interval: 3600)
+       //  secondsView.start(beginingValue: 60, interval: 1)
                 timerView.start(beginingValue: 0, interval: 60)
                 hoursView.start(beginingValue: 0, interval: 3600)
                  secondsView.start(beginingValue: 0, interval: 1)
