@@ -1,0 +1,12 @@
+PODS:
+  - SRCountdownTimer (1.0.1)
+
+DEPENDENCIES:
+  - SRCountdownTimer
+
+SPEC CHECKSUMS:
+  SRCountdownTimer: 187458addb1e88cae62eb5aa57f48d7888f8c18c
+
+PODFILE CHECKSUM: e829b12c95508674f82a142aa3f36eb7b936e443
+
+COCOAPODS: 1.1.1
