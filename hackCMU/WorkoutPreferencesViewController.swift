@@ -16,6 +16,7 @@ class WorkoutPreferencesViewController: UIViewController, UIPickerViewDelegate, 
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         longTimeView.delegate = self
         longTimeView.dataSource = self
         longTimeView.isHidden = true
@@ -34,6 +35,11 @@ class WorkoutPreferencesViewController: UIViewController, UIPickerViewDelegate, 
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return longTimeViewData[row]
     }
+    
+  /*  func pickerView(pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+        let attributedString = NSAttributedString(string: "Your string name here", attributes: [NSForegroundColorAttributeName : UIColor.redColor()])
+        return attributedString
+    } */
     
 
     @IBAction func onSegmentControlPress(_ sender: Any) {
