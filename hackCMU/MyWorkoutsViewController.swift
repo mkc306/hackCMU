@@ -8,17 +8,49 @@
 
 import UIKit
 
-class MyWorkoutsViewController: UIViewController {
+class MyWorkoutsViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+    @IBOutlet var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        tableView.delegate = self
+        tableView.dataSource = self
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
+            switch indexPath.row {
+            case 0:
+                cell.textLabel?.text = "Marathon Training"
+            case 1:
+                cell.textLabel?.text = "SWOLE BULK PLAN"
+            case 2:
+                cell.textLabel?.text = "HIIT"
+                
+            case 3:
+                cell.textLabel?.text = "Leg day"
+                
+            case 4:
+                cell.textLabel?.text = "Upper body workout"
+                
+            default: cell.textLabel?.text = ""
+                
+            }
+            return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath)
+        self.performSegue(withIdentifier: "ToMarathonSegue", sender: self)
     }
     
 

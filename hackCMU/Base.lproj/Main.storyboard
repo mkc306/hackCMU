@@ -153,12 +153,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ltz-dB-fgg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8380" y="1008.8455772113944"/>
+            <point key="canvasLocation" x="9319.2000000000007" y="1008.8455772113944"/>
         </scene>
-        <!--My Workouts-->
+        <!--Existing Workouts-->
         <scene sceneID="qoh-cE-qub">
             <objects>
-                <viewController id="izy-7r-4IQ" customClass="MyWorkoutsViewController" customModule="hackCMU" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="izy-7r-4IQ" customClass="MyWorkoutsViewController" customModule="hackCMU" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="coL-wB-Yw8"/>
                         <viewControllerLayoutGuide type="bottom" id="y11-0d-Qkq"/>
@@ -167,16 +167,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iOZ-PJ-yL7">
-                                <rect key="frame" x="59" y="134" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iOZ-PJ-yL7">
+                                <rect key="frame" x="16" y="64" width="343" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="rzb-c7-n2v">
-                                        <rect key="frame" x="0.0" y="28" width="240" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="rzb-c7-n2v">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rzb-c7-n2v" id="ChS-bc-NUG">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -184,12 +183,65 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iOZ-PJ-yL7" firstAttribute="leading" secondItem="0U6-76-JAz" secondAttribute="leadingMargin" id="AKg-6T-xTx"/>
+                            <constraint firstItem="iOZ-PJ-yL7" firstAttribute="top" secondItem="coL-wB-Yw8" secondAttribute="bottom" id="Fiq-Ld-5uM"/>
+                            <constraint firstItem="y11-0d-Qkq" firstAttribute="top" secondItem="iOZ-PJ-yL7" secondAttribute="bottom" id="NSe-V1-xU6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iOZ-PJ-yL7" secondAttribute="trailing" id="e9i-mZ-FXJ"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="My Workouts" id="UVQ-xU-DRe"/>
+                    <navigationItem key="navigationItem" title="Existing Workouts" id="2zQ-R7-Iyr"/>
+                    <connections>
+                        <outlet property="tableView" destination="iOZ-PJ-yL7" id="1R8-QP-CSd"/>
+                        <segue destination="5C9-hX-Sbz" kind="show" identifier="ToMarathonSegue" id="QNK-Qs-xGw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e64-3T-6fF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5542" y="1021"/>
+            <point key="canvasLocation" x="6480.8000000000002" y="1020.5397301349326"/>
+        </scene>
+        <!--Marathon View Controller-->
+        <scene sceneID="aJ2-VL-Ioh">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="5C9-hX-Sbz" customClass="MarathonViewController" customModule="hackCMU" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bwa-58-Kc6"/>
+                        <viewControllerLayoutGuide type="bottom" id="LuT-db-e6e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zki-fc-epD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IBv-tl-0U0">
+                                <rect key="frame" x="16" y="64" width="343" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="lbz-lZ-obV">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lbz-lZ-obV" id="ib6-OW-bS0">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LuT-db-e6e" firstAttribute="top" secondItem="IBv-tl-0U0" secondAttribute="bottom" id="4jk-16-Bq6"/>
+                            <constraint firstItem="IBv-tl-0U0" firstAttribute="leading" secondItem="zki-fc-epD" secondAttribute="leadingMargin" id="ONb-zi-mUb"/>
+                            <constraint firstItem="IBv-tl-0U0" firstAttribute="trailing" secondItem="zki-fc-epD" secondAttribute="trailingMargin" id="V5v-07-WOR"/>
+                            <constraint firstItem="IBv-tl-0U0" firstAttribute="top" secondItem="Bwa-58-Kc6" secondAttribute="bottom" id="flq-jF-It0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="IBv-tl-0U0" id="831-0X-qtK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N4I-pd-vOK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6503" y="1899"/>
         </scene>
         <!--Make Workout View Controller-->
         <scene sceneID="dMD-Em-RNg">
@@ -814,13 +866,13 @@
                     <connections>
                         <segue destination="Rgd-5L-P6k" kind="relationship" relationship="viewControllers" id="lRL-tO-Xcy"/>
                         <segue destination="zdH-XA-HmP" kind="relationship" relationship="viewControllers" id="sgS-I4-w3e"/>
-                        <segue destination="izy-7r-4IQ" kind="relationship" relationship="viewControllers" id="P7k-vf-Kbn"/>
+                        <segue destination="JWW-hC-jdj" kind="relationship" relationship="viewControllers" id="P7k-vf-Kbn"/>
                         <segue destination="6Bi-O9-8gl" kind="relationship" relationship="viewControllers" id="mwu-nB-jMy"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nMk-Gr-yFg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6407" y="761"/>
+            <point key="canvasLocation" x="7344.8000000000002" y="760.56971514242889"/>
         </scene>
         <!--Loading View Controller-->
         <scene sceneID="I7b-42-zLq">
@@ -876,7 +928,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5DT-Wn-GiN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7440.8000000000002" y="1008.8455772113944"/>
+            <point key="canvasLocation" x="8380" y="1008.8455772113944"/>
         </scene>
         <!--New Workout-->
         <scene sceneID="9VD-pi-6Ih">
@@ -896,6 +948,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="871-D5-Wyu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="7186.3999999999996" y="97.601199400299862"/>
+        </scene>
+        <!--My Workouts-->
+        <scene sceneID="bdl-Gu-RvG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JWW-hC-jdj" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="My Workouts" id="UVQ-xU-DRe"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Sgl-Ag-0W2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="izy-7r-4IQ" kind="relationship" relationship="rootViewController" id="gNY-K0-NcS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m2q-K8-mva" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5541.6000000000004" y="1020.5397301349326"/>
         </scene>
     </scenes>
     <resources>
