@@ -10,7 +10,7 @@ import UIKit
 
 
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet var profilePic: UIImageView!
 
     @IBOutlet var bmiLabel: UILabel!
@@ -20,6 +20,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet var inchesTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        poundsTextField.delegate = self
     let feet = String(describing: feetTextField.text!.characters.first!)
     let feetInt = Int(feet)
     let pounds = Int(poundsTextField.text!)
@@ -60,6 +61,22 @@ class ProfileViewController: UIViewController {
         
         return Double(round(1000*BMI)/1000)
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        for textField in self.view.subviews where textField is UITextField {
+            textField.resignFirstResponder()
+        }
+        return true
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        for txt in self.view.subviews {
+            if txt.isKind(of: UITextField.self) && txt.isFirstResponder {
+                txt.resignFirstResponder()
+            }
+        }
+    }
+
 
     
 //    pounds = float(input("Pounds? "))
