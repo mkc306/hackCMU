@@ -8,19 +8,36 @@
 
 import UIKit
 
-class WorkoutListViewController: UIViewController {
+class WorkoutListViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if section == 0 {
+            return 4
+        } else if section == 1 {
+            return 7
+        } else if section == 2 {
+            return 8
+        } else {
+            return 0
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = "placeholder \(indexPath.row)"
+        return cell
+    }
+}
+
 
     /*
     // MARK: - Navigation
@@ -32,4 +49,3 @@ class WorkoutListViewController: UIViewController {
     }
     */
 
-}
