@@ -21,7 +21,17 @@ class ExerciseViewController: UIViewController {
     }
     
     func playVideo() {
-        
+        guard let path = Bundle.main.path(forResource: "situp", ofType:"mp4") else {
+            debugPrint("video not found")
+            return
+        }
+        let player = AVPlayer(url: URL(fileURLWithPath: path))
+        let playerController = AVPlayerViewController()
+        playerController.player = player
+        present(playerController, animated: true) {
+            player.play()
+
+        }
     }
     @IBAction func onVideoButtonPress(_ sender: UIButton) {
         playVideo()

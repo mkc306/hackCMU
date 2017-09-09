@@ -24,6 +24,7 @@
 		4560D5921F63742200CF4E91 /* MyWorkoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4560D5911F63742200CF4E91 /* MyWorkoutsViewController.swift */; };
 		4560D5941F63743900CF4E91 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4560D5931F63743900CF4E91 /* ProfileViewController.swift */; };
 		4560D5961F63C23700CF4E91 /* iOSDevCenters+GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4560D5951F63C23700CF4E91 /* iOSDevCenters+GIF.swift */; };
+		4560D5981F63CB7000CF4E91 /* situp.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4560D5971F63CA8100CF4E91 /* situp.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		4560D5911F63742200CF4E91 /* MyWorkoutsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyWorkoutsViewController.swift; sourceTree = "<group>"; };
 		4560D5931F63743900CF4E91 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		4560D5951F63C23700CF4E91 /* iOSDevCenters+GIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "iOSDevCenters+GIF.swift"; sourceTree = "<group>"; };
+		4560D5971F63CA8100CF4E91 /* situp.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = situp.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				4560D5911F63742200CF4E91 /* MyWorkoutsViewController.swift */,
 				4560D58F1F6373C400CF4E91 /* PostWorkoutViewController.swift */,
 				4560D58D1F6373B000CF4E91 /* WorkoutInProgressViewController.swift */,
+				4560D5971F63CA8100CF4E91 /* situp.mp4 */,
 				4560D5721F6361CA00CF4E91 /* Assets.xcassets */,
 				4560D57D1F6369E400CF4E91 /* giphy.gif */,
 				4560D5741F6361CA00CF4E91 /* LaunchScreen.storyboard */,
@@ -162,6 +165,7 @@
 				4560D5761F6361CA00CF4E91 /* LaunchScreen.storyboard in Resources */,
 				4560D5731F6361CA00CF4E91 /* Assets.xcassets in Resources */,
 				4560D57E1F6369E400CF4E91 /* giphy.gif in Resources */,
+				4560D5981F63CB7000CF4E91 /* situp.mp4 in Resources */,
 				4560D5711F6361CA00CF4E91 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
