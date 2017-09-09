@@ -19,11 +19,14 @@ class MakeWorkoutViewController: UIViewController {
     var isRBicepSelected  = false
     var isLBicepSelected  = false
     var isAbsSelected  = false
+    let nothing:String = "No Muscles Selected"
     var labelText:String = "No Muscles Selected"
+    var originalText:String = "No Muscles Selected"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
         if bodyPartsLabel.text == "No Muscles Selected" {
             bodyPartsLabel.textColor = UIColor.lightGray
         }
@@ -33,63 +36,127 @@ class MakeWorkoutViewController: UIViewController {
     @IBAction func onChestButtonPress(_ sender: Any) {
         if isChestSelected {
             chestButton.setImage(#imageLiteral(resourceName: "Chest"), for: .normal)
-            if labelText == "No Muscles Selected" {
+            if labelText == nothing{
+                bodyPartsLabel.textColor = UIColor.lightGray
+            }
+            
+            if labelText.range(of: "Chest") != nil{
+                labelText = originalText
+                bodyPartsLabel.text = "\(labelText)"
+                isChestSelected = false
+            }
+        } else {
+            if labelText == nothing{
                 labelText = "Chest"
                 bodyPartsLabel.text = "\(labelText)"
-                bodyPartsLabel.textColor = UIColor.lightGray
-            } else {
-                chestButton.setImage(#imageLiteral(resourceName: "ChestHighlighted"), for: .normal)
-                labelText = labelText + "Chest"
-                bodyPartsLabel.text = "\(labelText)"
                 bodyPartsLabel.textColor = UIColor.black
-                isChestSelected = true
-                
             }
+            else {
+                originalText = labelText
+                labelText = originalText + ", Chest"
+                bodyPartsLabel.text = "\(labelText)"
+                bodyPartsLabel.textColor = UIColor.black            }
+            chestButton.setImage(#imageLiteral(resourceName: "ChestHighlighted"), for: .normal)
+            isChestSelected = true
+            
         }
     }
     
-    //Just apply this function to both R & L biceps
     @IBAction func onRBicepButtonPress(_ sender: UIButton) {
         if isRBicepSelected {
             rBicepButton.setImage(#imageLiteral(resourceName: "BicepR"), for: .normal)
             lBicepButton.setImage(#imageLiteral(resourceName: "BicepL"), for: .normal)
-            
-            if bodyPartsLabel.text == "No Muscles Selected" {
+            if labelText == nothing{
+                bodyPartsLabel.textColor = UIColor.lightGray
+            }
+        
+            if labelText.range(of: "Biceps") != nil{
+            labelText = originalText
+            bodyPartsLabel.text = "\(labelText)"
+            isRBicepSelected = false
+            isLBicepSelected = false
+            }
+        } else {
+            if labelText == nothing{
                 labelText = "Biceps"
                 bodyPartsLabel.text = "\(labelText)"
-                bodyPartsLabel.textColor = UIColor.lightGray
-            } else {
-                chestButton.setImage(#imageLiteral(resourceName: "ChestHighlighted"), for: .normal)
-                labelText = labelText + "Biceps"
-                bodyPartsLabel.text = "\(labelText)"
                 bodyPartsLabel.textColor = UIColor.black
-                isChestSelected = true
-                
             }
+            else {
+                originalText = labelText
+                labelText = originalText + "Biceps"
+                bodyPartsLabel.text = "\(labelText)"
+                bodyPartsLabel.textColor = UIColor.black            }
+            rBicepButton.setImage(#imageLiteral(resourceName: "BicepR Highlighted"), for: .normal)
+            lBicepButton.setImage(#imageLiteral(resourceName: "BicepL highlighted"), for: .normal)
+            isRBicepSelected = true
+            isLBicepSelected = true
+            
         }
     }
     
-    /* don't need this one
-     @IBAction func onLBicepButtonPress(_ sender: UIButton) {
-     }
-     */
+    @IBAction func onLBicepButtonPress(_ sender: UIButton) {
+        if isLBicepSelected {
+            rBicepButton.setImage(#imageLiteral(resourceName: "BicepR"), for: .normal)
+            lBicepButton.setImage(#imageLiteral(resourceName: "BicepL"), for: .normal)
+            if labelText == nothing{
+                bodyPartsLabel.textColor = UIColor.lightGray
+            }
+            
+            if labelText.range(of: "Biceps") != nil{
+                labelText = originalText
+                bodyPartsLabel.text = "\(labelText)"
+                isRBicepSelected = false
+                isLBicepSelected = false
+            }
+        } else {
+            if labelText == nothing {
+                labelText = "Biceps"
+                bodyPartsLabel.text = "\(labelText)"
+                bodyPartsLabel.textColor = UIColor.black
+            }
+            else {
+                originalText = labelText
+                labelText = originalText + ", Biceps"
+                bodyPartsLabel.text = "\(labelText)"
+                bodyPartsLabel.textColor = UIColor.black            }
+            rBicepButton.setImage(#imageLiteral(resourceName: "BicepR Highlighted"), for: .normal)
+            lBicepButton.setImage(#imageLiteral(resourceName: "BicepL highlighted"), for: .normal)
+            isRBicepSelected = true
+            isLBicepSelected = true
+            
+        }
+    }
     
     @IBAction func onAbsButtonPress(_ sender: UIButton) {
         if isAbsSelected {
             absButton.setImage(#imageLiteral(resourceName: "Abs"), for: .normal)
-            if bodyPartsLabel.text == "No Muscles Selected" {
+            if labelText == nothing{
+                bodyPartsLabel.textColor = UIColor.lightGray
+            }
+            
+            if labelText.range(of: "Abs") != nil{
+                labelText = originalText
+                bodyPartsLabel.text = "\(labelText)"
+                isAbsSelected = false
+            }
+        } else {
+            if labelText == nothing{
                 labelText = "Abs"
                 bodyPartsLabel.text = "\(labelText)"
-                bodyPartsLabel.textColor = UIColor.lightGray
-            } else {
-                chestButton.setImage(#imageLiteral(resourceName: "ChestHighlighted"), for: .normal)
-                labelText = labelText + "Abs"
-                bodyPartsLabel.text = "\(labelText)"
                 bodyPartsLabel.textColor = UIColor.black
-                isChestSelected = true
             }
+            else {
+                originalText = labelText
+                labelText = originalText + ", Abs"
+                bodyPartsLabel.text = "\(labelText)"
+                bodyPartsLabel.textColor = UIColor.black            }
+            absButton.setImage(#imageLiteral(resourceName: "Abs Highlighted"), for: .normal)
+            isAbsSelected = true
+            
         }
     }
+    
     
     
     /*
