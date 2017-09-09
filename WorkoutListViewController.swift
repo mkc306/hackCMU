@@ -9,10 +9,11 @@
 import UIKit
 
 class WorkoutListViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
-
+    @IBOutlet var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+       // self.tableView.contentInset = UIEdgeInsetsMake(20, 0, -80, 0);
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -36,16 +37,33 @@ class WorkoutListViewController: UIViewController,UITableViewDelegate, UITableVi
         cell.textLabel?.text = "placeholder \(indexPath.row)"
         return cell
     }
-}
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 25.0
+        
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        switch section {
+        case 0:
+            return "Chest"
+        case 1:
+            return "Biceps"
+        case 2:
+            return "Abs"
+        default: return ""
+        }
+        
+    }
+    
+    
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+}
