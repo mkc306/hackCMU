@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="IfC-c9-F6Z">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="IfC-c9-F6Z">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -436,7 +436,7 @@
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="ofs-Hs-1u6">
                                 <rect key="frame" x="27.5" y="225.5" width="320" height="216"/>
                                 <date key="date" timeIntervalSinceReferenceDate="526607999.923163">
-                                    <!--2017-09-08 23:59:59 +0000-->
+                                    <!--2017-09-08 11:59:59 pm +0000-->
                                 </date>
                             </datePicker>
                             <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jdO-Ic-Hce">
@@ -677,13 +677,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDr-zC-Up4">
-                                <rect key="frame" x="128" y="20" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSb-wG-Bba">
                                 <rect key="frame" x="26" y="84" width="323" height="180"/>
                                 <constraints>
@@ -708,7 +701,9 @@
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vuB-H7-tOr">
                                 <rect key="frame" x="26" y="256" width="323" height="294"/>
-                                <string key="text">8 - 12 reps 
+                                <mutableString key="text">Sit-Ups
+
+8 - 12 reps 
 
 1. Have your knees bent and the balls of your feet and heels placed flat on the ground.
 
@@ -718,7 +713,7 @@
 
 4. Keeping your heels on the ground and your toes flat to the ground, slowly and gently lift your head first, followed by your shoulder blades. Focus your eyes on your bent knees, all the while gently contracting the abdominal muscles. Pull up from the floor until you are at a ninety-degree angle, or when the elbows are on, or past, the knees.
 
-5. Hold the position for a second. Slowly bring the torso back to the floor but try to keep it slightly elevated off the ground. Keep a slight, yet relaxed, arch.</string>
+5. Hold the position for a second. Slowly bring the torso back to the floor but try to keep it slightly elevated off the ground. Keep a slight, yet relaxed, arch.</mutableString>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>

@@ -29,9 +29,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Access the storyboard and fetch an instance of the view controller
         let viewController: ExerciseViewController = storyboard.instantiateViewController(withIdentifier: "ExerciseViewController") as! ExerciseViewController
-        viewController.title = "Sit up"
         window?.rootViewController = viewController
         window?.makeKeyAndVisible()
+        
         print("AppDelegate: Start Workout Intent - TRUE")
         print(intent)
         return true
