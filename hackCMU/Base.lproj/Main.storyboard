@@ -757,9 +757,12 @@
                                 <rect key="frame" x="26" y="144" width="323" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="PeachDish"/>
+                                <connections>
+                                    <action selector="onPeachDishPress:" destination="ybI-89-b6b" eventType="touchUpInside" id="sLo-iy-cf1"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order a post workout meal?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpe-uO-Osx">
-                                <rect key="frame" x="77.5" y="50" width="220" height="30"/>
+                                <rect key="frame" x="77.5" y="94" width="220" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Ol7-mv-OVG"/>
                                     <constraint firstAttribute="width" constant="220" id="m3S-si-3f2"/>
@@ -779,6 +782,9 @@
                                 <rect key="frame" x="-5" y="363" width="380" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="GNC"/>
+                                <connections>
+                                    <action selector="onGNCPress:" destination="ybI-89-b6b" eventType="touchUpInside" id="kG1-gq-afe"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
